@@ -2,6 +2,7 @@ package saw.com.smack
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -31,13 +32,13 @@ class MainActivity : AppCompatActivity() {
         }*/
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_host_fragment)
+        /*val navController = findNavController(R.id.nav_host_fragment)*/
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        appBarConfiguration = AppBarConfiguration(setOf(
+   /*     appBarConfiguration = AppBarConfiguration(setOf(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        navView.setupWithNavController(navController)*/
     }
 
    /* override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -46,8 +47,18 @@ class MainActivity : AppCompatActivity() {
         return true
     }*/
 
-    override fun onSupportNavigateUp(): Boolean {
+    /*override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }*/
+
+    fun loginBtnNavClicked(view: View){
+
+    }
+    fun addChannelClicked(view: View){
+
+    }
+    fun sendMessageBtnClicked(view: View){
+
     }
 }
